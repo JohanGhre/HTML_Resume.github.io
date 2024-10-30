@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>CV - Resume HTML - </title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/inter-ui/3.19.3/inter.css">
+    <style>
+        :root {
+            --main-color: #2b2b2b;
+            --accent-color: #666666;
+            --border-color: #dddddd;
+            --background: #ffffff;
+            --section-spacing: 1.8rem;
+        }
+        
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            line-height: 1.6;
+            color: var(--main-color);
+            background: var(--background);
+            margin: 0;
+            padding: 2rem;
+            font-size: 14px;
+            max-width: 800px;
+            margin: 0 auto;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+        
+        header {
+            text-align: center;
+            margin-bottom: var(--section-spacing);
+            padding-bottom: 1rem;
+        }
+        
+        h1 {
+            font-size: 2.2rem;
+            font-weight: 700;
+            margin: 0;
+            letter-spacing: -0.02em;
+            color: var(--main-color);
+        }
+        
+        .title {
+            font-size: 1.2rem;
+            color: var(--accent-color);
+            margin: 0.5rem 0;
+            font-weight: 500;
+        }
+        
+        .contact-info {
+            font-size: 0.9rem;
+            color: var(--accent-color);
+            margin-top: 0.5rem;
+        }
+        
+        .contact-info a {
+            color: var(--accent-color);
+            text-decoration: none;
+        }
+        
+        .contact-info a:hover {
+            text-decoration: underline;
+        }
+        
+        section {
+            margin-bottom: var(--section-spacing);
+        }
+        
+        h2 {
+            font-size: 1.2rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            margin: 0 0 1rem 0;
+            padding-bottom: 0.3rem;
+            border-bottom: 1px solid var(--border-color);
+        }
+        
+        .entry {
+            margin-bottom: 1.2rem;
+            page-break-inside: avoid;
+        }
+        
+        .entry-title {
+            font-weight: 600;
+            margin-bottom: 0.2rem;
+        }
+        
+        .entry-subtitle {
+            color: var(--accent-color);
+            font-style: italic;
+            margin-bottom: 0.2rem;
+        }
+        
+        ul {
+            margin: 0.5rem 0;
+            padding-left: 1.2rem;
+        }
+        
+        li {
+            margin-bottom: 0.3rem;
+            text-align: justify;
+        }
+        
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 1rem;
+            padding: 1rem;
+            background-color: #f9eae1;
+            border: 1px solid #dddddd;
+            border-radius: 8px;
+        }
+    
+        .skill-category {
+            margin-bottom: 0.5rem;
+            text-align: left;
+        }
+    
+        .skill-title {
+            font-weight: normal;
+            font-size: 14px;
+            display: flex;
+            align-items: center;
+        }
+    
+        .skill-title img {
+            margin-right: 8px;
+        }
+    
+        h2 {
+            font-size: 1.5rem;
+            margin-bottom: 1.2rem;
+        }
+    
+        .certifications-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 0.8rem;
+        }
+    
+        .certification {
+            display: flex;
+            align-items: center;
+            font-size: 13.5px;
+        }
+    
+        .certification img {
+            margin-right: 10px;
+        }
+    
+        .contact-icons {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+        }
+        
+        .contact-icons a {
+            font-size: 0.9rem;
+            color: var(--accent-color);
+            text-decoration: none;
+        }
+    
+        h2 {
+            font-size: 1.6rem;
+            margin-bottom: 1.2rem;
+            letter-spacing: 0.05em;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Johan Ghrenassia</h1>
+        <div class="title">Data Scientist spécialisé en Intelligence Artificielle</div>
+        <div class="contact-info">
+            23 ans · Français<br>
+            +1 305 842 6386 · johanghre@icloud.com
+        </div>
+        <div class="contact-icons">
+            <a href="https://www.linkedin.com/in/johanghre/"><img src="https://img.icons8.com/ios-filled/16/000000/linkedin.png"/> LinkedIn</a>
+            <a href="https://github.com/JohanGhre"><img src="https://img.icons8.com/ios-filled/16/000000/github.png"/> GitHub</a>
+        </div>
+    </header>
+
+    <section>
+        <h2>Profil</h2>
+        <p>
+            Étudiant en M1 Data Analytics à Panthéon Sorbonne, intéressé par l’optimisation des processus via
+            l’Intelligence Artificielle et l’Analyse des Données, je recherche un stage conventionné de 4 à 6 mois en
+            2025 dans l’industrie, la défense ou l’aérospatial, en France ou à l’international.
+        </p>
+    </section>
+
+    <section>
+        <h2>Education</h2>
+        <div class="entry">
+            <div class="entry-title">Master 2 (RNCP 7) · Data Scientist </div>
+            <div class="entry-subtitle">DataScientest x Mines ParisTech PSL</div>
+            <div>Programmation | Analyse de données & statistiques | Machine Learning | Big Data | Apprentissage profond | Systèmes complexes & IA</div>
+        </div>
+        
+        <div class="entry">
+            <div class="entry-title">Licence de Physique</div>
+            <div class="entry-subtitle">Sorbonne Université</div>
+            <div>Physique quantique | Électromagnétisme | Modélisation | Maths | Mécanique | Physique numérique</div>
+        </div>
+
+        <div class="entry">
+            <div class="entry-title">Applied Mathematics</div>
+            <div class="entry-subtitle">Florida International University</div>
+            <div>Calcul III | Équations différentielles | Introduction à la programmation | Statistiques | Algèbre linéaire</div>
+        </div>
+    </section>
+
+    <section>
+        <h2>Expérience & Projets</h2>
+
+        <div class="entry">
+            <div class="entry-title">Stage Data Science & Machine Learning</div>
+            <div class="entry-subtitle">DataScientest x Mines ParisTech · 3 mois</div>
+            <ul>
+                <li>Classification des battements cardiaques à partir de signaux ECG Kaggle</li>
+                <li>Analyse, visualisation et formation de modèle <b>RNN</b></li>
+                <li>Développement API et interface Streamlit (précision 98%)</li>
+            </ul>
+        </div>
+
+        <div class="entry">
+            <div class="entry-title">Stage en Laboratoire</div>
+            <div class="entry-subtitle">Institut des NanoSciences de Paris (INSP)</div>
+            <ul>
+                <li>Analyse et interprétation des données pour évaluer les propriétés d'une nouvelle molécule</li>
+                <li>Utilisation de <b>Python</b> pour l'automatisation et l'analyse statistique avancée</li>
+                <li>Création de tableaux et visualisations avec Excel</li>
+            </ul>
+        </div>
+
+        <div class="entry">
+            <div class="entry-title">Modélisation et Simulation de trajectoire 2D</div>
+            <div class="entry-subtitle">Sorbonne Université</div>
+            <ul>
+                <li>Développement d'une simulation interactive intégrant les lois de la physique</li>
+                <li>Utilisation de Pygame pour la modélisation de l'impact de la friction sur un boulet de canon</li>
+                <li>Modélisation mathématique basée sur l'équation d'Euler pour une représentation réaliste</li>
+            </ul>
+        </div>
+
+        <div class="entry">
+            <div class="entry-title">Trading Algorithmique & Automatisation</div>
+            <div class="entry-subtitle">Unnisoft Gulf Team, Dubai · 2 semaines</div>
+            <ul>
+                <li>Acquisition et prétraitement de <b>données financières</b></li>
+                <li>Conception et backtesting de <b>stratégies de trading</b></li>
+                <li>Automatisation des transactions via API</li>
+            </ul>
+        </div>
+        
+        <div class="entry">
+            <div class="entry-title">Modélisation et Simulation du COVID-19</div>
+            <div class="entry-subtitle">Sorbonne Université</div>
+            <ul>
+                <li>Implémentation du modèle <b>SIR</b> avec <b>Python</b> et Pygame</li>
+                <li>Test de divers paramètres d'évolution</li>
+                <li>Analyse approfondie et visualisation des résultats</li>
+            </ul>
+        </div>
+    </section>
+
+    <section>
+        <h2>Compétences Techniques</h2>
+        <div class="skills-grid">
+            <div class="skill-category">
+                <div class="skill-title"><img src="https://img.icons8.com/ios-filled/16/000000/data-configuration.png"/> Data Science</div>
+            </div>
+            <div class="skill-category">
+                <div class="skill-title"><img src="https://img.icons8.com/ios-filled/16/000000/graph.png"/> Analytics</div>
+            </div>
+            <div class="skill-category">
+                <div class="skill-title"><img src="https://img.icons8.com/ios-filled/16/000000/statistics.png"/> Statistical Modeling</div>
+            </div>
+            <div class="skill-category">
+                <div class="skill-title"><img src="https://img.icons8.com/ios-filled/16/000000/artificial-intelligence.png"/> Machine Learning</div>
+            </div>
+            <div class="skill-category">
+                <div class="skill-title"><img src="https://img.icons8.com/ios-filled/16/000000/brain.png"/> Deep Learning</div>
+            </div>
+            <div class="skill-category">
+                <div class="skill-title"><img src="https://img.icons8.com/ios-filled/16/000000/flow-chart.png"/> Algorithms</div>
+            </div>
+            <div class="skill-category">
+                <div class="skill-title"><img src="https://img.icons8.com/ios-filled/16/000000/data-in-both-directions.png"/> Data Mining</div>
+            </div>
+            <div class="skill-category">
+                <div class="skill-title"><img src="https://img.icons8.com/ios-filled/16/000000/database.png"/> SQL</div>
+            </div>
+            <div class="skill-category">
+                <div class="skill-title"><img src="https://img.icons8.com/ios-filled/16/000000/python.png"/> Python (Programming Language)</div>
+            </div>
+        </div>
+    </section>
+
+
+    <section>
+        <h2>Outils</h2>
+        <div class="tools-grid">
+            <div class="tool-item">
+                <img src="https://img.icons8.com/ios-filled/16/000000/python.png"/> Python
+            </div>
+            <div class="tool-item">
+                <img src="https://img.icons8.com/ios-filled/16/000000/git.png"/> Git/GitHub
+            </div>
+            <div class="tool-item">
+                <img src="https://avatars.githubusercontent.com/u/45109972?s=200&v=4" alt="Streamlit" style="width:16px;"/> Streamlit
+            </div>
+            <div class="tool-item">
+                <img src="https://img.icons8.com/ios-filled/16/000000/data-configuration.png"/> Dash
+            </div>
+            <div class="tool-item">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/9/92/LaTeX_logo.svg" alt="LaTeX" style="width:16px;"/> LaTeX
+            </div>
+            <div class="tool-item">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg" alt="VS Code" style="width:16px;"/> VS Code
+            </div>
+        </div>
+    
+        <style>
+            .tools-grid {
+                display: grid;
+                grid-template-columns: repeat(3, 1fr); /* Trois colonnes */
+                gap: 1rem;
+                margin-top: 1rem;
+            }
+    
+            .tool-item {
+                display: flex;
+                align-items: center;
+                font-size: 14px;
+            }
+    
+            .tool-item img {
+                margin-right: 8px;
+            }
+        </style>
+    </section>
+    
+    
+    
+    
+    
+    
+        <style>
+            .tools-grid {
+                display: grid;
+                grid-template-columns: repeat(3, 1fr); /* Trois colonnes */
+                gap: 1rem;
+                margin-top: 1rem;
+            }
+    
+            .tool-item {
+                display: flex;
+                align-items: center;
+                font-size: 14px;
+            }
+    
+            .tool-item img {
+                margin-right: 8px;
+            }
+        </style>
+    </section>
+    
+
+    <section>
+        <h2>Certifications</h2>
+        <div class="certifications-grid">
+            <div class="certification">
+                <img src="https://img.icons8.com/ios-filled/16/000000/certificate.png"/> 
+                <div><b>IBM</b> – Exploratory Data Analysis for Machine Learning
+                    <div style="margin-left: 26px;">
+                        <b>Outils</b> : Python, Pandas, NumPy, Seaborn, Matplotlib, Plotly <br>
+                        <b>Compétences</b> : Analyse des données, visualisation des données, détection des valeurs aberrantes, manipulation des DataFrames, interprétation des tendances et des schémas à travers des graphiques.
+                    </div>
+                </div>
+            </div>
+            <div class="certification">
+                <img src="https://img.icons8.com/ios-filled/16/000000/certificate.png"/>
+                <div><b>Udacity</b> – AI for Trading
+                    <div style="margin-left: 26px;">
+                        <b>Outils</b> : Python, Pandas, NumPy, Scikit-learn, TensorFlow, Matplotlib <br>
+                        <b>Compétences</b> : Modélisation des séries temporelles, stratégies de trading automatique, prévision des prix, analyse financière, création de modèles de machine learning pour les marchés financiers.
+                    </div>
+                </div>
+            </div>
+            <div class="certification">
+                <img src="https://img.icons8.com/ios-filled/16/000000/certificate.png"/>
+                <div><b>Innosoft Gulf Team</b> – Trading Algorithmique avec Python
+                    <div style="margin-left: 26px;">
+                        <b>Outils</b> : Python, APIs de trading (Binance, Kraken, etc.), Pandas, NumPy, Plotly <br>
+                        <b>Compétences</b> : Développement d’algorithmes de trading, intégration d'API, automatisation des transactions, backtesting des stratégies de trading, optimisation des portefeuilles.
+                    </div>
+                </div>
+            </div>
+            <div class="certification">
+                <img src="https://img.icons8.com/ios-filled/16/000000/certificate.png"/>
+                <div><b>DeepLearning.AI</b> – Neural Networks and Deep Learning
+                    <div style="margin-left: 26px;">
+                        <b>Outils</b> : TensorFlow, Keras, Python <br>
+                        <b>Compétences</b> : Conception et entraînement des réseaux de neurones, propagation arrière (backpropagation), fonction de perte, optimisation du modèle, ajustement des hyperparamètres.
+                    </div>
+                </div>
+            </div>
+            <div class="certification">
+                <img src="https://img.icons8.com/ios-filled/16/000000/certificate.png"/>
+                <div><b>DeepLearning.AI</b> – Advanced Learning Algorithms
+                    <div style="margin-left: 26px;">
+                        <b>Outils</b> : TensorFlow, Keras, Python, Scikit-learn <br>
+                        <b>Compétences</b> : Régularisation (L1, L2), optimisation par gradient (stochastic gradient descent, Adam), apprentissage supervisé et non supervisé, tuning des modèles avancés.
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+        <style>
+            .certifications-grid {
+                display: grid;
+                grid-template-columns: 1fr;
+                gap: 1rem;
+            }
+    
+            .certification {
+                display: flex;
+                align-items: center;
+                font-size: 14px;
+            }
+    
+            .certification img {
+                margin-right: 10px;
+            }
+    
+            .certification div {
+                margin-bottom: 0.8rem;
+            }
+        </style>
+    </section>
+    
+    
+
+    <section>
+        <h2>Langues</h2>
+        <ul>
+            <li>Français : Langue Maternelle</li>
+            <li>Anglais : Courant</li>
+            <li>Espagnol : Avancé</li>
+        </ul>
+    </section>
+
+</body>
+</html>
